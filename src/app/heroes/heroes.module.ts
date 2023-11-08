@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+
+import { FormsModule } from '@angular/forms';import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AgregarComponent } from './pages/agregar/agregar.component';
@@ -7,20 +8,26 @@ import { ListadoComponent } from './pages/listado/listado.component';
 import { HeroesRoutingModule } from './heroes-routing.module';
 import { MaterialModule } from '../material/material.module';
 import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
+import { ImagenPipe } from './pipes/imagen.pipe';
+import { HeroeComponent } from './pages/heroe/heroe.component';
+
 
 @NgModule({
   declarations: [
     AgregarComponent,
     BuscarComponent,
     ListadoComponent,
-    HeroeTarjetaComponent
+    HeroeTarjetaComponent,
+    ImagenPipe,
+    HeroeComponent
   ],
 
   imports: [
     CommonModule,
     FlexLayoutModule,  
     HeroesRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule
 
   ]
   

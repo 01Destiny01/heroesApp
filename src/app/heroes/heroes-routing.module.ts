@@ -11,7 +11,7 @@ const routes: Routes = [
   {
     path: '',
     component:HomeComponent,
-    //home component actual como padre de todos componentes children
+   
     children: [
       {
         path:'listado',

@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './heroes/pages/home/home.component';
 import { MaterialModule } from './material/material.module';
 import { ListadoComponent } from './heroes/pages/listado/listado.component';
+import { HeroesRoutingModule } from './heroes/heroes-routing.module';
 
 
 
@@ -15,7 +16,8 @@ import { ListadoComponent } from './heroes/pages/listado/listado.component';
   declarations: [
     AppComponent,
     ErrorPageComponent,
-    HomeComponent
+    HomeComponent,
+    
 
   ],
   imports: [
