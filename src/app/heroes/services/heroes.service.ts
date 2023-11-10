@@ -21,4 +21,9 @@ export class HeroesService {
 
 
   }
+
+  getSugerencias(termino:string):Observable<Heroe[]>{
+    
+    return this.http.get<Heroe[]>(`//localhost:3000/heroes?q=${termino}&_limit=6`);
+  }
 }
