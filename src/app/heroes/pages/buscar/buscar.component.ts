@@ -17,7 +17,7 @@ export class BuscarComponent implements OnInit {
   }
   buscando(){
  this.heroesService.getHeroes()
-    .subscribe(heroes => this.heroes = heroes)
+    .subscribe(heroes => this.heroes = heroes);
 
   }
 }

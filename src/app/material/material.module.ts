@@ -1,6 +1,6 @@
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { NgModule } from '@angular/core';
-import { MatInputModule } from '@angular/material/Input'
+import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -20,7 +20,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatGridListModule,
     MatProgressSpinnerModule,
     MatAutocompleteModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule
 
   ],
   imports: [
@@ -33,7 +34,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatGridListModule,
     MatProgressSpinnerModule,
     MatAutocompleteModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule
+    
   ],
 })
 export class MaterialModule { }

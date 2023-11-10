@@ -7,10 +7,16 @@
     </div>
     <div>
         <h3>Bucador </h3>
+  
         <mat-form-field>
-            <mat-label>Number</mat-label>
-            <input type="text" placeholder="Pick one" aria-label="Number" matInput [(ngModel)]="termino"
-                [matAutocomplete]="auto">
+            <input type="text" 
+            placeholder="Busca un héroe" 
+            aria-label="Number"
+             matInput [(ngModel)]="termino"
+            [matAutocomplete]="auto"
+            (input)="buscando()">
+
+
             <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
                 <mat-option *ngFor="let heroe of heroes" [value]="heroe">
                     {{heroe.superhero}}
