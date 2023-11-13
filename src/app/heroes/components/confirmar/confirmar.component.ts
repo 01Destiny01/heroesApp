@@ -7,6 +7,7 @@ import { Heroe } from '../../interfaces/heroes.interface';
   templateUrl: './confirmar.component.html'
 })
 export class ConfirmarComponent implements OnInit {
+   //MAT_DIALOG
   constructor(private dialogRef:MatDialogRef<ConfirmarComponent>,
   @Inject(MAT_DIALOG_DATA) public data:Heroe){}
   ngOnInit(): void {
