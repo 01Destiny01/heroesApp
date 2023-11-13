@@ -10,6 +10,7 @@ import { MaterialModule } from '../material/material.module';
 import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 import { ImagenPipe } from './pipes/imagen.pipe';
 import { HeroeComponent } from './pages/heroe/heroe.component';
+import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HeroeComponent } from './pages/heroe/heroe.component';
     ListadoComponent,
     HeroeTarjetaComponent,
     ImagenPipe,
-    HeroeComponent
+    HeroeComponent,
+    ConfirmarComponent
   ],
 
   imports: [
